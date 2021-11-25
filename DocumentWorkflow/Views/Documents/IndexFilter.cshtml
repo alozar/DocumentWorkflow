@@ -1,0 +1,15 @@
+﻿@model DocumentWorkflow.ViewModels.DocumentsVM;
+
+<div class="mt-3 btn-group" role="group">
+    <div class="btn-group" role="group">
+        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownCreateDoc" data-bs-toggle="dropdown"
+                aria-expanded="false" title="Добавить документ" aria-label="Добавить документ">
+            <i class="fas fa-plus"></i>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownCreateDoc">
+            <li><button id="createIncomingDoc" class="dropdown-item" type="button" title="Входящий документ">Входящий</button></li>
+            <li><button id="createOutgoingDoc" class="dropdown-item" type="button" title="Исходящий документ">Исходящий</button></li>
+        </ul>
+    </div>
+    <button class="btn btn-secondary" type="button" title="Фильтр">Фильтр</button>
+</div>

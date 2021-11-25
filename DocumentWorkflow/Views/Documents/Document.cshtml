@@ -1,0 +1,63 @@
+﻿<div class="modal fade" id="docModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="docModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="docModalLabel">Документ</h5>
+                <button id="docModalCloseBtn" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fas fas-times" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+                        <input type="hidden" id="docId">
+                        <input type="hidden" id="docStatusEnum">
+                        <input type="hidden" id="docType">
+
+                        <div class="col-4" title="Номер">
+                            <label for="docNumber" class="form-label">Номер</label>
+                            <input type="text" id="docNumber" class="form-control" readonly>
+                        </div>
+                        <div class="col-4" title="Дата регистрации">
+                            <label for="docDate" class="form-label">Дата регистрации</label>
+                            <input type="datetime-local" id="docDate" class="form-control">
+                        </div>
+                        <div class="col-4" title="Статус">
+                            <label for="docStatusText" class="form-label">Статус</label>
+                            <div class="input-group">
+                                <button id="changeStatusBtn" class="btn btn-success" type="button"><i class="fas fa-angle-double-right"></i></button>
+                                <span class="input-group-text"><i class="fas fa-registered"></i></span>
+                                <input type="text" id="docStatusText" class="form-control" readonly>
+                            </div>
+                        </div>
+                        <div class="col-12" title="Содержание">
+                            <label for="docContent" class="form-label">Содержание</label>
+                            <textarea id="docContent" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 dw-incoming" title="Заявитель">
+                            <label for="docApplicant" class="form-label">Заявитель</label>
+                            <input type="text" id="docApplicant" class="form-control" readonly>
+                        </div>
+                        <div class="col-4 dw-outgoing" title="Адресат">
+                            <label for="docAddressee" class="form-label">Адресат</label>
+                            <input type="text" id="docAddressee" class="form-control">
+                        </div>
+                        <div class="col-4 dw-outgoing" title="Тема">
+                            <label for="docTheme" class="form-label">Тема</label>
+                            <input type="text" id="docTheme" class="form-control">
+                        </div>
+                        <div class="col-4 dw-outgoing" title="Подписант">
+                            <label for="docSigner" class="form-label">Подписант</label>
+                            <input type="text" id="docSigner" class="form-control">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button id="docModalOkBtn" type="button" class="btn btn-secondary">Ок</button>
+            </div>
+        </div>
+    </div>
+</div>

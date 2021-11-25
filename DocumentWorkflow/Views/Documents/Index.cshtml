@@ -1,0 +1,5 @@
+﻿@model DocumentWorkflow.ViewModels.DocumentsVM;
+@await Html.PartialAsync("IndexFilter", Model)
+@await Html.PartialAsync("IndexTable", Model)
+@*<partial name="IndexPagination" model="Model" />*@
+@await Html.PartialAsync("Document")
